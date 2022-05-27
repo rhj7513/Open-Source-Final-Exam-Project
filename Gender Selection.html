@@ -1,45 +1,26 @@
-<title>이미지 누르면 나오는 화면 성공~~</title> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="./assets/css/style.css">  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
 </head>
-
-<body style="background-color:#F5FCFF">
+<body>
     <p style="text-align: center;font-size: 200%; margin: 80px 0px; "><strong>상대의 성별은 무엇입니까?</strong></p>
-    
-    
-    <div id="box" class="product-title">
-        <div class="product-img-div">
-            
-            <br/>
-            <div>남자?<br/><br/>
-                <a href="./man.html"><img class="product-img"src="./assets/imgs/man.png">
-                    <!--<p style="vertical-align:bottom;">남자면 이미지를 클릭해라. <br/></p>-->
-                </a>
-            <p>남자면 이미지를 클릭해라.</p>  
-            </div>
+
+    <div id="genderBox">
+        <div class="genderBoxDiv">
+            <h2>남자?</h2>
+            <img class="genderImg"src="./assets/imgs/man.png" onclick="window.location.href='./man.html'">
+            <p>남자면 이미지를 클릭해라.</p>
+        </div>
+        <div class="genderBoxDiv">
+            <h2>여자?</h2>
+            <img class="genderImg"src="./assets/imgs/Woman.png" onclick="window.location.href='./Woman.html'">
+            <p>여자면 이미지를 클릭해라.</p>
         </div>
     </div>
-
-    <div id="box" class="product-title">
-        <div class="product-img-div">
-            <br/>
-            <div>여자?<br/><br/>
-                <a href="./Woman.html"> <img class="product-img"src="./assets/imgs/Woman.png">
-                    <!--<p style="vertical-align:bottom;">여자면 이미지를 클릭해라. <br/></p> -->
-                </a>
-                <p>여자면 이미지를 클릭해라.</p>  
-            </div>
-        </div>
-    </div>
-
-      
-    <div id="goto_main">
-        <!--<button onclick="back">Back</button>-->
-        <a href="./index.html">
-            <p style="vertical-align:bottom; text-align:right">돌아가기</p>
-            
-        </a>
-    </div>
-        
-    
 </body>
+</html>
