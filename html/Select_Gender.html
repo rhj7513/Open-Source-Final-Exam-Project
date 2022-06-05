@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../js/localStore.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,12 +14,12 @@
     <div id="genderBox">
         <div class="genderBoxDiv">
             <h2>남자?</h2>
-            <img class="genderImg"src="./assets/imgs/man.png" onclick="window.location.href='./man.html'">
+            <img class="genderImg"src="../assets/imgs/man.png" onclick="selectGender('man')">
             <p>남자면 이미지를 클릭해라.</p>
         </div>
         <div class="genderBoxDiv">
             <h2>여자?</h2>
-            <img class="genderImg"src="./assets/imgs/Woman.png" onclick="window.location.href='./Woman.html'">
+            <img class="genderImg"src="../assets/imgs/Woman.png" onclick="selectGender('woman')">
             <p>여자면 이미지를 클릭해라.</p>
         </div>
     </div>
