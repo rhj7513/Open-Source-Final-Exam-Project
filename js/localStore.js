@@ -4,8 +4,19 @@ function selectGender(getInput) {
 }
 
 function selectAge(getInput) {
-    localStorage.setItem("age", getInput);
-    window.location.href = './Select_Event.html';
+    if(localStorage.setItem("ten", getInput)){
+        window.location.href = './Select_Event_ten.html';
+    }
+    else if(localStorage.setItem("twenty", getInput)){
+        window.location.href = './Select_Event_twenty.html';
+    }
+    else if(localStorage.setItem("forty", getInput)){
+        window.location.href = './Select_Event_forty.html';
+    }
+    else if(localStorage.setItem("sixty", getInput)){
+        window.location.href = './Select_Event_sixty.html';
+    }
+    
 }
 
 function selectEvent(getInput) {
