@@ -3,21 +3,23 @@ function selectGender(getInput) {
     window.location.href = './Select_Age.html';
 }
 
-function selectAge(getInput) {
-    if(localStorage.setItem("ten", getInput)){
-        window.location.href = './Select_Event_ten.html';
-    }
-    else if(localStorage.setItem("twenty", getInput)){
-        window.location.href = './Select_Event_twenty.html';
-    }
-    else if(localStorage.setItem("forty", getInput)){
-        window.location.href = './Select_Event_forty.html';
-    }
-    else if(localStorage.setItem("sixty", getInput)){
-        window.location.href = './Select_Event_sixty.html';
-    }
-    
+function selectAge(getInput='ten') {
+    localStorage.setItem("age", getInput)
+    window.location.href = './Select_Event_ten.html';  
 }
+function selectAge(getInput='twenty') {
+    localStorage.setItem("age", getInput)
+    window.location.href = './Select_Event_twenty.html';  
+}
+function selectAge(getInput='forty') {
+    localStorage.setItem("age", getInput)
+    window.location.href = './Select_Event_forty.html';  
+}
+function selectAge(getInput='sixty') {
+    localStorage.setItem("age", getInput)
+    window.location.href = './Select_Event_sixty.html';  
+}
+
 
 function selectEvent(getInput) {
     localStorage.setItem("event", getInput);
