@@ -113,6 +113,12 @@ function appendResults(response){
         var src = document.getElementById("header");
         src.appendChild(img);
     }
+    else if(response[0].present=="콜라겐"){
+        var img = document.createElement("img");
+        img.src = "../assets/imgs/콜라겐.jpg";
+        var src = document.getElementById("header");
+        src.appendChild(img);
+    }
 }
 
 function submitToServer() {
