@@ -15,12 +15,18 @@
     </div>
     <div id="center"><h3>결과 <br> 도출중</h3></div>
     <div id="container" style="display:none;">
-      <h1>로딩 후 화면</h1>
-      <li>
-        <ol id="1st"></ol>
-        <ol id="2nd"></ol>
-        <ol id="3rd"></ol>
-      </li>
+      <div id=ListBox>
+        <p style="text-align: center;font-size: 200%; margin: 80px 0px; "><strong>이런 선물은 어떨까?</strong></p>
+        
+        <div class="ListBoxDiv">
+          <p>첫번째 선물</p>
+          <strong id="1st"></strong>
+         </div>
+        <div class="ListBoxDiv">
+         <p id="2nd"></p>
+         <p id="3rd"></p>
+        </div>
+      </div>
     <div>
     <script>submitToServer();</script>
 </body>
