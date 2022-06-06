@@ -56,6 +56,13 @@
         
     }
 
+    .FinalImg{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 300px;
+    }
+
 
     #main{
         display: flex;
